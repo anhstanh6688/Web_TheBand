@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/font/themify-icons-font/themify-icons/themify-icons.css">
+</head>
+<body>
+    <div id="main">
+        <div id="header">
+            <!-- Begin: Nav -->
+            <ul id="nav">
+                <li><a href="">Home</a></li>
+                <li><a href="">Band</a></li>
+                <li><a href="">Tour</a></li>
+                <li><a href="">Contact</a></li>
+                <li>
+                    <a href="">
+                        More 
+                        <i class=" nav-arrow-down ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li><a href="">Merchandise</a></li>
+                        <li><a href="">Extras</a></li>
+                        <li><a href="">Media</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <!-- End: Nav -->
+
+            <!-- Begin: Search button -->
+             <div class="search-btn">
+                <i class="search-icon ti-search"></i>
+             </div>
+
+            <!-- End: Search button -->
+             
+        </div>
+
+        <div id="slider">
+            <div class="text-content">
+                <h2 class="text-heading">New York</h2>
+                <div class="text-description">The atmosphere in New York is lorem ipsum.</div>
+            </div>
+        </div>
+
+        <div id="content">
+            <!-- Content-section -->
+            <div class="content-section">
+                <h2 class="section-heading">THE BAND</h2>
+                <P class="section-sub-heading">We love music</P>
+                <P class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</P>
+                <div class="members-list">
+                    <div class="member-item">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/image/band/member1.jpg" alt="Name" class="member-img">
+                    </div>
+
+                    <div class="member-item">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/image/band/member1.jpg" alt="Name" class="member-img">
+                    </div>
+
+                    <div class="member-item">
+                        <p class="member-name">Name</p>
+                        <img src="./assets/image/band/member1.jpg" alt="Name" class="member-img">
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+
+            <!-- About-section -->
+             <div class="tour-section">
+                 <div class="content-section">
+                     <h2 class="section-heading text-white">TOUR DATES</h2>
+                     <P class="section-sub-heading text-white">Remember to book tickets</P>
+                    <!-- Tickets  -->
+                     <ul class="tickets-list">
+                        <li>September <span class="sold-out">Sold out</span></li>
+                        <li>October <span class="sold-out">Sold out</span></li>
+                        <li>November <span class="quantity">3</span></li>
+                     </ul>
+                     <!-- Places  -->
+                      <div class="places-list">
+                        <div class="place-item">
+                            <img src="./assets/image/places/place1.jpg" alt="New York" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">New York</h3>
+                                <p class="place-time">Fri 27 Nov 2016</p>
+                                <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+
+                        <div class="place-item">
+                            <img src="./assets/image/places/place2.jpg" alt="New York" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">Paris</h3>
+                                <p class="place-time">Sat 28 Nov 2016</p>
+                                <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+
+                        <div class="place-item">
+                            <img src="./assets/image/places/place3.jpg" alt="New York" class="place-img">
+                            <div class="place-body">
+                                <h3 class="place-heading">San Francisco</h3>
+                                <p class="place-time">Sun 29 Nov 2016</p>
+                                <p class="place-description">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                                <button class="place-buy-btn js-buy-ticket">Buy Tickets</button>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                      </div>
+                    </div>
+             </div>
+
+            <!-- Contact-section -->
+            <div class="contact-section">
+                <h2 class="section-heading">CONTACT</h2>
+                <P class="section-sub-heading">Fan?Drop a note!</P>
+                </div>
+        </div>
+
+        <div id="footer">
+
+        </div>
+    </div>
+
+    <!-- Tạo modal, và tạo ngoài main nhé  -->
+    <div class="js-modal">
+        <div class="modal-container">
+            <div class="modal-close js-modal-close">
+                <i class="ti-close"></i>
+            </div>
+
+            <!-- thẻ header cũng tương tự như div thôi  -->
+            <header class="modal-header">
+                <i class="ti-bag">
+                    Tickets
+                </i>
+            </header>
+            <div class="modal-body">
+                <!-- cái label có for thì trong for phải là 1 ID, để khi bấm vào vtri khác nó vẫn ăn vào cột điền  -->
+                <label for="tickets-quantity" class="modal-label">
+                    <i class="ti-shopping-cart"></i>
+                    Tickets, $15 per person
+                </label>
+                <input id="tickets-quantity" class="modal-input" placeholder="How many?">
+
+                <label for="tickets-email" class="modal-label">
+                    <i class="ti-user"></i>
+                    Send to
+                </label>
+                <input ID="tickets-email" class="modal-input" placeholder="Enter email..."> 
+
+                <button id="buy-tickets">
+                    Pay <i class="ti-check"></i>
+                </button>
+            </div>
+            <footer class="modal-footer">
+                <p class="modal-help">Need <a href="">Help?</a></p>
+            </footer>
+        </div>
+    </div>
+
+    <script>
+        // dùng để 3 class đều chung về buyBtns 
+        const buyBtns = document.querySelectorAll('.js-buy-ticket')
+        // lấy ra modal 
+        const modal = document.querySelector('.js-modal')
+        const modalClose = document.querySelector('.js-modal-close')
+
+        // hàm hiển thị modal mua vé (thêm class open và modal) 
+        function showBuyTickets() {
+            // để khi click sẽ hiển thị hộp thoại SHOW 
+            // alert("SHOW")
+            modal.classList.add('open')
+        }
+        // hàm ẩn modal mua vé (gỡ bỏ class open của modal) 
+        function hideBuyTickets() {
+            modal.classList.remove('open')
+        }
+        
+        // lặp qua từng thẻ button và nghe hành vi click
+        for (const buyBtn of buyBtns) {
+        // đại loại khi mình click vào buy ticket thì hàm showBuyTickets sẽ được chọn 
+        // addEventListener là để biết được người dùng đang click vào nó
+        buyBtn.addEventListener('click', showBuyTickets)
+        }
+
+        modalClose.addEventListener('click', hideBuyTickets) 
+
+        
+    </script>
+
+
+</body>
+</html>
