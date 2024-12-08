@@ -359,7 +359,7 @@ html {
 
 /* Modal  */
 
-.modal {
+.js-modal {
     /* tạo 1 modal (code 363->368) nhưng chưa thấy vì nền trắng  */
     position: fixed;
     top: 0;
@@ -380,6 +380,8 @@ html {
     /* ở trên có display: flex thì mình ẩn đi */
     display: none;
 }
+
+
 
 .open {
     display: flex;

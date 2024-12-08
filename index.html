@@ -179,10 +179,12 @@
             // để khi click sẽ hiển thị hộp thoại SHOW 
             // alert("SHOW")
             modal.classList.add('open')
+            modal.style.display = block
         }
         // hàm ẩn modal mua vé (gỡ bỏ class open của modal) 
         function hideBuyTickets() {
             modal.classList.remove('open')
+            modal.style.display = none
         }
         
         // lặp qua từng thẻ button và nghe hành vi click
@@ -192,7 +194,8 @@
         buyBtn.addEventListener('click', showBuyTickets)
         }
 
-        modalClose.addEventListener('click', hideBuyTickets) 
+        modalClose.addEventListener('click', hideBuyTickets)
+        
 
         
     </script>
