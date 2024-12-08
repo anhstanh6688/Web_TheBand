@@ -132,7 +132,7 @@
 
     <!-- Tạo modal, và tạo ngoài main nhé  -->
     <div class="js-modal">
-        <div class="modal-container">
+        <div class="modal-container js-modal-container">
             <div class="modal-close js-modal-close">
                 <i class="ti-close"></i>
             </div>
@@ -173,6 +173,7 @@
         // lấy ra modal 
         const modal = document.querySelector('.js-modal')
         const modalClose = document.querySelector('.js-modal-close')
+        const modalContainer =document.querySelector('.js-modal-container')
 
         // hàm hiển thị modal mua vé (thêm class open và modal) 
         function showBuyTickets() {
@@ -196,8 +197,15 @@
 
         modalClose.addEventListener('click', hideBuyTickets)
         
+        //bấm ra ngoài modal là nó sẽ đóng, nma bị 1 cái là bấm bên trong modal vẫn đóng
+        //nên phải có kĩ thuật nổi bọt bên dưới
+        modal.addEventListener('click', hideBuyTickets)
 
-        
+        // viết hàm trong addEventListener thì k cần đặt tên 
+        modalContainer.addEventListener('click', function (event) {
+            // chặn tính nổi bọt 
+            event.stopPropagation ()
+        })
     </script>
 
 

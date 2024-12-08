@@ -395,6 +395,9 @@ html {
     min-height: 200px;
     /* để tạo nút close  */
     position: relative;
+    /* đây là css phải có keyframes ở dưới r nhé
+    kiểu ease là kiểu từ trên nhanh xuống chậm chậm */
+    animation: modalFadeIn ease 0.5s;
 }
 
 header.modal-header {
@@ -472,3 +475,17 @@ header.modal-header {
     
 }
 
+/* tạo ra hình ảnh tĩnh thành những chuyển động liên tiếp  */
+/* modalFadeIn là tên tự đặt 
+và khi xong keyframes cần có 1 css ( animation:.. cho chính thằng muốn có hiệu ứng)
+*/
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
